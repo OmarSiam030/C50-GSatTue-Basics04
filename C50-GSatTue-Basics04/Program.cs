@@ -18,6 +18,14 @@ namespace C50_GSatTue_Basics04
         }
 
         #endregion
+        #region Question 6 - Method
+
+        static void ApplyDiscount(double[] prices)
+        {
+            prices[0] -= 5;
+        }
+
+        #endregion
         static void PrintBookTitle(string title)
         {
             Console.WriteLine("Book title: " + title);
@@ -88,6 +96,23 @@ namespace C50_GSatTue_Basics04
             }
 
             #endregion
+            #region Question 6
+
+            // 6. Write ApplyDiscount(double[] prices)
+            // that subtracts 5 from prices[0].
+            // Print prices[0] afterward.
+            // Expected result: 20.5 because the array contents are modified.
+
+            {
+                double[] prices = { 25.5, 40.0 };
+
+                ApplyDiscount(prices);
+
+                Console.WriteLine(prices[0]);
+            }
+
+            #endregion
+
         }
         #region Question 3 - Method
 

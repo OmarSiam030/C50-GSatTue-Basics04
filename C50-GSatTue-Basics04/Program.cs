@@ -26,14 +26,22 @@ namespace C50_GSatTue_Basics04
         }
 
         #endregion
+
         static void PrintBookTitle(string title)
         {
             Console.WriteLine("Book title: " + title);
         }
 
         #endregion
-   
-    static void Main(string[] args)
+        #region Question 7 - Method
+
+        static void AddBonusPagesByRef(ref int pages)
+        {
+            pages += 50;
+        }
+
+        #endregion
+        static void Main(string[] args)
         {
             #region Question 1
 
@@ -112,6 +120,22 @@ namespace C50_GSatTue_Basics04
             }
 
             #endregion
+            #region Question 7
+
+            // 7. Rewrite AddBonusPages using ref.
+            // Call it and print pages afterward.
+            // Expected result: 450 because ref allows modifying the original variable.
+
+            {
+                int pages = 400;
+
+                AddBonusPagesByRef(ref pages);
+
+                Console.WriteLine(pages);
+            }
+
+            #endregion
+
 
         }
         #region Question 3 - Method

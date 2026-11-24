@@ -49,6 +49,23 @@ namespace C50_GSatTue_Basics04
         }
 
         #endregion
+        #region Question 9 - Method
+
+        static bool TryGetPrice(string title, out double price)
+        {
+            if (title == "Clean Code")
+            {
+                price = 25.5;
+                return true;
+            }
+            else
+            {
+                price = 0;
+                return false;
+            }
+        }
+
+        #endregion
         static void Main(string[] args)
         {
             #region Question 1
@@ -158,7 +175,29 @@ namespace C50_GSatTue_Basics04
             }
 
             #endregion
+            #region Question 9
 
+            // 9. Write TryGetPrice(string title, out double price).
+            // Return true and set price to 25.5 if title is "Clean Code".
+            // Otherwise return false and set price to 0.
+            // Print the price if found.
+
+            {
+                double price;
+
+                bool found = TryGetPrice("Clean Code", out price);
+
+                if (found)
+                {
+                    Console.WriteLine(price);
+                }
+                else
+                {
+                    Console.WriteLine("Book not found");
+                }
+            }
+
+            #endregion
         }
         #region Question 3 - Method
 

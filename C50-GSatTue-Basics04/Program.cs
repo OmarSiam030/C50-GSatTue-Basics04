@@ -66,6 +66,14 @@ namespace C50_GSatTue_Basics04
         }
 
         #endregion
+        #region Question 10 - Method
+
+        static void PrintBookInfo(string title, int pages = 300)
+        {
+            Console.WriteLine($"Book: {title}, Pages: {pages}");
+        }
+
+        #endregion
         static void Main(string[] args)
         {
             #region Question 1
@@ -198,6 +206,18 @@ namespace C50_GSatTue_Basics04
             }
 
             #endregion
+            #region Question 10
+
+            // 10. Write PrintBookInfo(string title, int pages = 300).
+            // Call it once with only a title,
+            // and once passing both title and pages.
+
+            PrintBookInfo("Clean Code");
+
+            PrintBookInfo("Refactoring", 464);
+
+            #endregion
+
         }
         #region Question 3 - Method
 

@@ -10,13 +10,22 @@ namespace C50_GSatTue_Basics04
     {
         #region Question 4 - Method
 
+        #region Question 5 - Method
+
+        static void AddBonusPages(int pages)
+        {
+            pages += 50;
+        }
+
+        #endregion
         static void PrintBookTitle(string title)
         {
             Console.WriteLine("Book title: " + title);
         }
 
         #endregion
-        static void Main(string[] args)
+   
+    static void Main(string[] args)
         {
             #region Question 1
 
@@ -62,6 +71,21 @@ namespace C50_GSatTue_Basics04
             // Call it with "Clean Code".
 
             PrintBookTitle("Clean Code");
+
+            #endregion
+            #region Question 5
+
+            // 5. Write AddBonusPages(int pages) that adds 50 to pages.
+            // Call it with int pages = 400 and print pages afterward.
+            // Expected result: 400 because int is passed by value.
+
+            {
+                int pages = 400;
+
+                AddBonusPages(pages);
+
+                Console.WriteLine(pages);
+            }
 
             #endregion
         }

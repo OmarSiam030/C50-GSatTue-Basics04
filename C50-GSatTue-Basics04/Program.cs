@@ -74,6 +74,17 @@ namespace C50_GSatTue_Basics04
         }
 
         #endregion
+        #region Question 12 - Method
+
+        static void PrintAllTitles(params string[] titles)
+        {
+            foreach (string title in titles)
+            {
+                Console.WriteLine(title);
+            }
+        }
+
+        #endregion
         static void Main(string[] args)
         {
             #region Question 1
@@ -223,6 +234,18 @@ namespace C50_GSatTue_Basics04
             // Pass pages before title.
 
             PrintBookInfo(pages: 500, title: "The Pragmatic Programmer");
+
+            #endregion
+            #region Question 12
+
+            // 12. Write PrintAllTitles(params string[] titles).
+            // Call it with three book titles.
+
+            PrintAllTitles(
+                "Clean Code",
+                "The Pragmatic Programmer",
+                "Refactoring"
+            );
 
             #endregion
         }

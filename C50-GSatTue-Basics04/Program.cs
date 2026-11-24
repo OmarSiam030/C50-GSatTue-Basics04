@@ -41,6 +41,14 @@ namespace C50_GSatTue_Basics04
         }
 
         #endregion
+        #region Question 8 - Method
+
+        static void ReplaceArray(ref double[] prices)
+        {
+            prices = new double[] { 10.0, 12.5, 15.0 };
+        }
+
+        #endregion
         static void Main(string[] args)
         {
             #region Question 1
@@ -135,7 +143,21 @@ namespace C50_GSatTue_Basics04
             }
 
             #endregion
+            #region Question 8
 
+            // 8. Write ReplaceArray(ref double[] prices)
+            // that replaces the array with a new array.
+            // Print prices.Length afterward.
+
+            {
+                double[] prices = { 25.5, 40.0 };
+
+                ReplaceArray(ref prices);
+
+                Console.WriteLine(prices.Length);
+            }
+
+            #endregion
 
         }
         #region Question 3 - Method

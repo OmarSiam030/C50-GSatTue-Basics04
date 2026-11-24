@@ -38,6 +38,23 @@ namespace C50_GSatTue_Basics04
             //}
 
             #endregion
+            #region Question 3
+
+            // 3. Write a method PrintWelcomeMessage()
+            // that prints "Welcome to the Library!".
+            // Call it from Main.
+         
+            PrintWelcomeMessage();
+
+            #endregion
         }
+        #region Question 3 - Method
+
+        static void PrintWelcomeMessage()
+        {
+            Console.WriteLine("Welcome to the Library!");
+        }
+
+        #endregion
     }
 }

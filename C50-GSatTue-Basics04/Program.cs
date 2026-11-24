@@ -8,6 +8,14 @@ namespace C50_GSatTue_Basics04
 {
     class Program
     {
+        #region Question 4 - Method
+
+        static void PrintBookTitle(string title)
+        {
+            Console.WriteLine("Book title: " + title);
+        }
+
+        #endregion
         static void Main(string[] args)
         {
             #region Question 1
@@ -45,6 +53,15 @@ namespace C50_GSatTue_Basics04
             // Call it from Main.
          
             PrintWelcomeMessage();
+
+            #endregion
+            #region Question 4
+
+            // 4. Write a method PrintBookTitle(string title)
+            // that prints "Book title: " + title.
+            // Call it with "Clean Code".
+
+            PrintBookTitle("Clean Code");
 
             #endregion
         }

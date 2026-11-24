@@ -22,6 +22,22 @@ namespace C50_GSatTue_Basics04
             }
 
             #endregion
+            #region Question 2
+
+            // 2. Create a 2x2 multidimensional array shelfCopies.
+            // Print copies on shelf 1, slot 0.
+
+            //{
+            //    int[,] shelfCopies =
+            //    {
+            //    { 3, 5 },
+            //    { 1, 4 }
+            //};
+
+            //    Console.WriteLine(shelfCopies[1, 0]);
+            //}
+
+            #endregion
         }
     }
 }
